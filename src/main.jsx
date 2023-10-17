@@ -6,6 +6,7 @@ import Root from './Layout/Root';
 import Login from './Components/Login';
 import Home from './Home/Home';
 import ErrorPage from './Errorpage/ErrorPage';
+import BrandDetails from './Home/BrandDetails';
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,14 @@ const router = createBrowserRouter([
       
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: ()=> fetch('/brands.json')   
+      },
+      {
+        path:"/brands/:id",
+        element: <BrandDetails></BrandDetails>,
+        loader: ()=> fetch('/brands.json')
+
       },
       {
         path: '/login',
