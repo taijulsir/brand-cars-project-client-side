@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 const Brands = ({loadedBrands}) => {
-    console.log(loadedBrands)
+
     return (
         <div className="max-w-7xl mx-auto">
             <h1 className="text-center font-bold text-4xl mb-12">Explore Our Automotive Brands</h1>
