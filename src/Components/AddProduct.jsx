@@ -1,5 +1,5 @@
 
-import { HiArrowCircleDown } from "react-icons/hi";
+
 
 const AddProduct = () => {
 
@@ -160,7 +160,7 @@ const AddProduct = () => {
                                 </label>
                                 <label className="input-group">
 
-                                    <input type="text" placeholder="Rating" name="rating" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-10 " />
+                                    <input type="text" placeholder="Rating" name="rating" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-5 " />
                                 </label>
                             </div>
                             <div className="form-control">
@@ -170,7 +170,7 @@ const AddProduct = () => {
                                 <label className="input-group">
                                    
 
-                                    <input type="text" placeholder="Price" name="price" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-10 " />
+                                    <input type="text" placeholder="Price" name="price" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-5 " />
                                 </label>
                             </div>
 
@@ -178,271 +178,21 @@ const AddProduct = () => {
                         </div>
 
                         {/* photo url */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:px-24 gap-6">
+                        <div className=" lg:px-24">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Brand Image</span>
                                 </label>
                                 <label className="input-group">
 
-                                    <input type="text" placeholder="Price" name="brandImage" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-10 " />
+                                    <input type="text" placeholder="Photo Url" name="brandImage" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-10 " />
                                 </label>
                             </div>
 
-                            {/* advertise image section */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 col-span-3">
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Advertise Image 1</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Price" name="advertise1" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-10 " />
-                                    </label>
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Advertise Image 2</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Price" name="advertise2" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-10 " />
-                                    </label>
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Advertise Image 3</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Price" name="advertise3" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-10 " />
-                                    </label>
-                                </div>
-                            </div>
+                           
                         </div>
 
-                        {/* brands exclusive products */}
-
-                        <div className="lg:px-24 space-y-4" >
-                            <h3 className="underline text-xl font-medium flex  items-center" >Brands Exclsive  4 Products:<HiArrowCircleDown></HiArrowCircleDown> </h3>
-
-                            {/* product 1  */}
-                            <div className="grid grid-cols-5 gap-6">
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Name</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter products name" name="productName1" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Description</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter description" name="productDesc1" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Price</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Price" name="productPrice1" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Type</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Type" name="productType1" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Photo</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter photo url" name="productPhoto1" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-                            </div>
-
-                            {/* product 2  */}
-                            <div className="grid grid-cols-5 gap-6">
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Name</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter products name" name="productName2" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Description</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter description" name="productDesc2" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Price</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Price" name="productPrice2" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Type</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Type" name="productType2" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Photo</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter photo url" name="productPhoto2" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-                            </div>
-
-                            {/* product 3  */}
-                            <div className="grid grid-cols-5 gap-6">
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Name</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter products name" name="productName3" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Description</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter description" name="productDesc3" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Price</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Price" name="productPrice3" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Type</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Type" name="productType3" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Photo</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter photo url" name="productPhoto3" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-                            </div>
-
-                            {/* product 4  */}
-                            <div className="grid grid-cols-5 gap-6">
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Name</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter products name" name="productName4" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Description</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter description" name="productDesc4" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Price</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Price" name="productPrice4" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Type</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Type" name="productType4" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="label-text">Photo</span>
-                                    </label>
-                                    <label className="input-group">
-
-                                        <input type="text" placeholder="Enter photo url" name="productPhoto4" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg mb-4  " />
-                                    </label>
-                                </div>
-                            </div>
-
-                        </div>
+                       
 
                         {/* add button */}
                         <div className="lg:px-24 gap-6">
