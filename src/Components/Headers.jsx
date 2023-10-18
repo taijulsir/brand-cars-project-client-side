@@ -1,9 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../public/new-cars-logo.png"
-import users from "../../public/users.png"
+import AuthHook from "../CustomHook/AuthHook";
+import toast from "react-hot-toast";
 
 const Headers = () => {
-
+    const { user, signOutUser } = AuthHook()
+    const handleSignOUt = () => {
+        signOutUser()
+        .then(()=> {
+            toast.success('Sign Out Succesfull')
+        })
+        .catch((error)=> {
+            toast.error(error)
+        })
+    }
     const navlinks =
         <>
             {/* Home, Add Product, My Cart, and Login. */}
@@ -40,17 +50,18 @@ const Headers = () => {
                         <span className="badge badge-xs badge-primary indicator-item"></span>
                     </div>
                 </button>
-                <div className="dropdown dropdown-end">
+                {user ? <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                            <img src={users} />
+                            <img src={user.photoURL} />
                         </div>
                     </label>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Profile</a></li>
-                        <li><a>Logout</a></li>
+                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                       
+                        <li className="text-xl font-medium px-1">{user.displayName}</li>
+                        <li><button className="text-xl" onClick={handleSignOUt}>Logout</button></li>
                     </ul>
-                </div>
+                </div> : <Link to="/login"><button className="btn bg-amber-400 font-bold"> Login</button></Link>}
             </div>
         </div>
     );

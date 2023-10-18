@@ -10,6 +10,7 @@ import BrandDetails from './Home/BrandDetails';
 import AddProduct from './Components/AddProduct';
 import Register from './Components/Register';
 import Authprovider from './AuthProvider/AuthProvider';
+import PrivateRoute from './PriivateRoute/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -26,13 +27,13 @@ const router = createBrowserRouter([
       },
       {
         path:"/brands/:id",
-        element: <BrandDetails></BrandDetails>,
+        element: <PrivateRoute><BrandDetails></BrandDetails></PrivateRoute>,
         loader: ()=> fetch('/brands.json')
 
       },
       {
         path:"/addProduct",
-        element: <AddProduct></AddProduct>
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
       },
       {
         path: '/login',
