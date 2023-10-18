@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 const Register = () => {
+    const [showPassword, setShowPassword] = useState(false)
     return (
         <div>
 
@@ -30,9 +32,19 @@ const Register = () => {
                                     <input
                                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
                                         type="email" name="email" placeholder="Email" required />
-                                    <input
-                                        className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
-                                        type="password" name="password" placeholder="Password" required />
+                                    <div className="relative flex items-center justify-center mt-4">
+                                            <input aria-label="enter Password" role="input"
+                                                name="password"
+                                                type={showPassword ? "text" : "password"}
+                                                placeholder="Password"
+                                                className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white" required />
+                                            <div className="absolute right-0 mt-2 mr-3 cursor-pointer">
+                                                <button onClick={() => setShowPassword(!showPassword)}> {
+
+                                                    showPassword ? <FaEye className="text-xl text-[#403F3F]"></FaEye> : <FaEyeSlash className="text-xl text-[#403F3F]"></FaEyeSlash>
+                                                }</button>
+                                            </div>
+                                            </div>       
                                     <input
                                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
                                         type="text" name="photo" placeholder="Photo Url" required />
