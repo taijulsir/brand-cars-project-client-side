@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 
 const ProductDetails = () => {
     const product = useLoaderData()
-   const {name,image,price,rating,type} = product;
+   const {name,brandImage,price,rating,type} = product;
     return (
         <div>
            <section className="overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800">
@@ -13,35 +13,35 @@ const ProductDetails = () => {
                 <div className="w-full px-4 md:w-1/2 ">
                     <div className="sticky top-0 z-50 overflow-hidden ">
                         <div className="relative mb-6 lg:mb-10 lg:h-2/4 ">
-                            <img src={image} alt=""
+                            <img src={brandImage} alt=""
                                 className="object-cover w-full lg:h-[600px] "/>
                         </div>
                         <div className="flex-wrap hidden md:flex ">
                             <div className="w-1/2 p-2 sm:w-1/4">
                                 <a href="#"
                                     className="block border border-blue-300 dark:border-transparent dark:hover:border-blue-300 hover:border-blue-300">
-                                    <img src={image} alt=""
+                                    <img src={brandImage} alt=""
                                         className="object-cover w-full lg:h-20"/>
                                 </a>
                             </div>
                             <div className="w-1/2 p-2 sm:w-1/4">
                                 <a href="#"
                                     className="block border border-transparent dark:border-transparent dark:hover:border-blue-300 hover:border-blue-300">
-                                    <img src={image} alt=""
+                                    <img src={brandImage} alt=""
                                         className="object-cover w-full lg:h-20"/>
                                 </a>
                             </div>
                             <div className="w-1/2 p-2 sm:w-1/4">
                                 <a href="#"
                                     className="block border border-transparent dark:border-transparent dark:hover:border-blue-300 hover:border-blue-300">
-                                    <img src={image} alt=""
+                                    <img src={brandImage} alt=""
                                         className="object-cover w-full lg:h-20"/>
                                 </a>
                             </div>
                             <div className="w-1/2 p-2 sm:w-1/4">
                                 <a href="#"
                                     className="block border border-transparent dark:border-transparent dark:hover:border-blue-300 hover:border-blue-300">
-                                    <img src={image} alt=""
+                                    <img src={brandImage} alt=""
                                         className="object-cover w-full lg:h-20"/>
                                 </a>
                             </div>

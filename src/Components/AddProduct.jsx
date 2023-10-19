@@ -14,24 +14,24 @@ const AddProduct = () => {
         const rating = form.rating.value;
         const brandImage = form.brandImage.value;
 
-        const newProduct = { name, brandName, type, description, price, rating,brandImage  }
+        const newProduct = { name, brandName, type, description, price, rating, brandImage }
         console.log(newProduct)
 
 
-        fetch("http://localhost:5000/brandNames",{
-            method:"POST",
+        fetch("http://localhost:5000/brandNames", {
+            method: "POST",
             headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(newProduct)
         })
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data)
-            if(data.insertedId){
-                toast.success("Succesfully added product")
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.insertedId) {
+                    toast.success("Succesfully added product")
+                }
+            })
 
     }
 
@@ -63,7 +63,16 @@ const AddProduct = () => {
                                 </label>
                                 <label className="input-group">
 
-                                    <input type="text" placeholder="Enter brand name" name="brand" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-4 " />
+                                    <select name="brand" id="" className='input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-4'>
+
+                                        <option value="BMW">BMW</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Tesla">Tesla</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+
+                                    </select>
                                 </label>
                             </div>
 
@@ -110,7 +119,7 @@ const AddProduct = () => {
                                     <span className="label-text">Price</span>
                                 </label>
                                 <label className="input-group">
-                                   
+
 
                                     <input type="text" placeholder="Price" name="price" className="input input-bordered w-full px-4 py-3 outline-none rounded-lg  mb-5 " />
                                 </label>
@@ -131,10 +140,10 @@ const AddProduct = () => {
                                 </label>
                             </div>
 
-                           
+
                         </div>
 
-                       
+
 
                         {/* add button */}
                         <div className="lg:px-24 gap-6">

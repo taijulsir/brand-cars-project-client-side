@@ -6,11 +6,12 @@ import WhyChoose from "./WhyChoose";
 import RecentLaunch from "./RecentLaunch";
 
 
+
 const Home = () => {
     const loadedBrands = useLoaderData()
     return (
         <div className="space-y-12">
-          <Banners></Banners>
+          <Banners></Banners>       
          <Brands loadedBrands={loadedBrands}></Brands>
          <RecentLaunch></RecentLaunch>
          <WhyChoose></WhyChoose>
