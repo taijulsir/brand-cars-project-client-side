@@ -4,14 +4,14 @@ import { HiOutlineShieldCheck,HiOutlineThumbUp,HiCreditCard,HiCurrencyDollar,HiH
 
 const WhyChoose = () => {
     return (
-        <div className="max-w-7xl mx-auto px-3 lg:px-5 lg:py-10 my-10 bg-gradient-to-br from-pink-200 to-pink-100">
+        <div className="container mx-auto px-3 lg:px-5 lg:py-10 my-10 bg-gradient-to-br from-pink-200 to-pink-100 shadow-xl">
 
             {/* heading section */}
             <div className="grid grid-cols-1 lg:grid-cols-3 ">
 
                 <div className=" col-span-2">
                     <h3 className="text-2xl lg:text-5xl font-bold mb-3">Why Choose<span className="text-pink-400"> Motoz</span></h3>
-                    <p className="text-[#403F3F] mb-3">Here are some of the featured in different categories</p>
+                    <p className="text-[#403F3F] mb-3">Here are some of the service what we provide to our customer</p>
                 </div>
                 <div className="flex gap-6 flex-col md:flex-row">
 

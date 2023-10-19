@@ -1,16 +1,16 @@
 
-
+import './cars.css'
 const RecentLaunch = () => {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="container mx-auto">
             <h1 className="text-2xl font-semibold ">Recent Launched Car</h1>
             <p className="text-sm text-[#403F3F] mb-5 mt-2">Explore the latest car models with detailed specs, pricing, and review.</p>
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:px-0 px-3">
 
            <div className="wrapper bg-gray-400 antialiased text-gray-900">
-                <div>
+                <div className='image-container'>
 
-                    <img src="https://i.postimg.cc/nrqQTYDZ/bmw-up.jpg" alt=" random imgee" className="w-full h-[350px] object-cover object-center rounded-lg shadow-md" />
+                    <img src="https://i.postimg.cc/nrqQTYDZ/bmw-up.jpg" alt=" random imgee" className="w-full h-[350px] object-cover object-center rounded-lg shadow-md image pulse-grow " />
 
                     <div className="relative px-4 -mt-16  ">
                         <div className="bg-gradient-to-br from-pink-200 to-pink-100 p-6 rounded-lg shadow-lg">
@@ -40,9 +40,9 @@ const RecentLaunch = () => {
             </div>
 
             <div className="wrapper bg-gray-400 antialiased text-gray-900">
-                <div>
+                <div className='image-container'>
 
-                    <img  src=" https://i.postimg.cc/JnwcRnmT/toyota.jpg" alt=" random imgee" className="w-full h-[350px] object-cover object-center rounded-lg shadow-md" />
+                    <img  src=" https://i.postimg.cc/JnwcRnmT/toyota.jpg" alt=" random imgee" className="w-full h-[350px] object-cover object-center rounded-lg shadow-md image pulse-grow" />
 
                     <div className="relative px-4 -mt-16  ">
                         <div className="bg-gradient-to-br from-pink-200 to-pink-100 p-6 rounded-lg shadow-lg">
@@ -72,9 +72,9 @@ const RecentLaunch = () => {
             </div>
 
             <div className="wrapper bg-gray-400 antialiased text-gray-900">
-                <div>
+                <div className='image-container'>
 
-                    <img src=" https://i.postimg.cc/pVj03wQV/1-Tesla-Model-3.jpg" alt=" random imgee" className="w-full h-[350px]  object-cover object-center rounded-lg shadow-md" />
+                    <img src=" https://i.postimg.cc/pVj03wQV/1-Tesla-Model-3.jpg" alt=" random imgee" className="w-full h-[350px]  object-cover object-center rounded-lg shadow-md image pulse-grow" />
 
                     <div className="relative px-4 -mt-16  ">
                         <div className="bg-gradient-to-br from-pink-200 to-pink-100 p-6 rounded-lg shadow-lg">
@@ -104,9 +104,9 @@ const RecentLaunch = () => {
             </div>
 
             <div className="wrapper bg-gray-400 antialiased text-gray-900">
-                <div>
+                <div className='image-container'>
 
-                    <img src=" https://i.postimg.cc/jSpJ7F92/mercedes-benz.webp" alt=" random imgee" className="w-full h-[350px]  object-cover object-center rounded-lg shadow-md" />
+                    <img src=" https://i.postimg.cc/jSpJ7F92/mercedes-benz.webp" alt=" random imgee" className="w-full h-[350px]  object-cover object-center rounded-lg shadow-md image pulse-grow" />
 
                     <div className="relative px-4 -mt-16  ">
                         <div className="bg-gradient-to-br from-pink-200 to-pink-100 p-6 rounded-lg shadow-lg">

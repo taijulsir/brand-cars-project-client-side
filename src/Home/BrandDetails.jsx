@@ -1,12 +1,13 @@
-import { useLoaderData } from "react-router-dom";
 
-
+import ProductCard from "./ProductCard";
 const BrandDetails = () => {
-    const brands = useLoaderData()
-
+   
+    
     return (
         <div>
-            <h1>Hello this is details page</h1>
+           {/* <Slider></Slider> */}
+           <ProductCard></ProductCard>
+          
         </div>
     );
 };

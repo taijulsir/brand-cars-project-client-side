@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <footer className="font-[sans-serif] bg-gradient-to-br from-pink-700 to-red-400  bg-opacity-80 py-8 px-10">
-               <div className=" max-w-7xl mx-auto">
+               <div className=" container mx-auto">
                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 pb-8 border-b border-[#FFA726] ">
                     <li>
                         <h3 className="text-[#FFA726] font-semibold text-5xl">25+</h3>

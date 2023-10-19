@@ -52,7 +52,10 @@
           "hashtags": ["SUV", "family-friendly", "safety"]
         }
       ]
+
     },
+
+
     {
       "id": 2,
       "brandName": "Ford",
@@ -106,6 +109,8 @@
           "hashtags": ["sports", "iconic", "performance"]
         }
       ]
+
+
     },
     {
       "id": 3,
@@ -160,6 +165,8 @@
           "hashtags": ["luxury", "SUV", "urban"]
         }
       ]
+
+
     },
     {
       "id": 4,
@@ -214,7 +221,11 @@
           "hashtags": ["luxury", "SUV", "versatile"]
         }
       ]
+
+
     },
+
+
     {
       "id": 5,
       "brandName": "Tesla",
@@ -269,6 +280,8 @@
         }
       ]
     },
+
+    
     {
       "id": 6,
       "brandName": "Honda",

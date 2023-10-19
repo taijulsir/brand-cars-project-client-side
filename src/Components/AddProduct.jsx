@@ -1,6 +1,6 @@
 
 
-
+import toast, { Toaster } from 'react-hot-toast';
 const AddProduct = () => {
 
     const handleAddProduct = e => {
@@ -13,89 +13,31 @@ const AddProduct = () => {
         const price = form.price.value;
         const rating = form.rating.value;
         const brandImage = form.brandImage.value;
-        // advertise images
-        const advertise1Image = form.advertise1.value;
-        const advertise2Image = form.advertise2.value;
-        const advertise3Image = form.advertise3.value;
 
-        // exclusive product field 
-        const productName1 = form.productName1.value;
-        const productName2 = form.productName2.value;
-        const productName3 = form.productName3.value;
-        const productName4 = form.productName4.value;
-
-        const productDesc1 = form.productDesc1.value;
-        const productDesc2 = form.productDesc2.value;
-        const productDesc3 = form.productDesc3.value;
-        const productDesc4 = form.productDesc4.value;
-
-        const productPrice1 = form.productPrice1.value;
-        const productPrice2 = form.productPrice2.value;
-        const productPrice3 = form.productPrice3.value;
-        const productPrice4 = form.productPrice4.value;
-
-        const productType1 = form.productType1.value;
-        const productType2 = form.productType2.value;
-        const productType3 = form.productType3.value;
-        const productType4 = form.productType4.value;
-
-        const productPhoto1 = form.productPhoto1.value;
-        const productPhoto2 = form.productPhoto2.value;
-        const productPhoto3 = form.productPhoto3.value;
-        const productPhoto4 = form.productPhoto4.value;
-
-
-
-
-        const newProduct = { name, brand, type, description, price, rating,brandImage,
-            advertiseImage: [
-                {image: advertise1Image},
-                {image: advertise2Image},
-                {image: advertise3Image}
-            ],
-            productDetails: [
-                {
-                    productName: productName1,
-                    productDesc: productDesc1,
-                    productPrice: productPrice1,
-                    productType: productType1,
-                    productPhoto: productPhoto1,
-
-                },
-                {
-                    productName: productName2,
-                    productDesc: productDesc2,
-                    productPrice: productPrice2,
-                    productType: productType2,
-                    productPhoto: productPhoto2,
-
-                },
-                {
-                    productName: productName3,
-                    productDesc: productDesc3,
-                    productPrice: productPrice3,
-                    productType: productType3,
-                    productPhoto: productPhoto3,
-
-                },
-                {
-                    productName: productName4,
-                    productDesc: productDesc4,
-                    productPrice: productPrice4,
-                    productType: productType4,
-                    productPhoto: productPhoto4,
-
-                },
-               
-            ]
-         }
+        const newProduct = { name, brand, type, description, price, rating,brandImage  }
         console.log(newProduct)
+
+
+        fetch("http://localhost:5000/brandNames",{
+            method:"POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newProduct)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+            if(data.insertedId){
+                toast.success("Succesfully added product")
+            }
+        })
 
     }
 
 
     return (
-        <div className=" max-w-7xl mx-auto" >
+        <div className=" container mx-auto" >
             <div>
                 <div>
                     <h1 className="text-4xl font-bold text-center pt-12  text-lime-700">Add Automotive products</h1>
@@ -329,6 +271,7 @@ const AddProduct = () => {
 
                 </div>
             </div>
+            <Toaster></Toaster>
         </div>
     );
 };
