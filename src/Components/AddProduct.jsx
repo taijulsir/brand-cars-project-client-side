@@ -7,14 +7,14 @@ const AddProduct = () => {
         e.preventDefault()
         const form = e.target;
         const name = form.name.value;
-        const brand = form.brand.value;
+        const brandName = form.brand.value;
         const type = form.type.value;
         const description = form.description.value;
         const price = form.price.value;
         const rating = form.rating.value;
         const brandImage = form.brandImage.value;
 
-        const newProduct = { name, brand, type, description, price, rating,brandImage  }
+        const newProduct = { name, brandName, type, description, price, rating,brandImage  }
         console.log(newProduct)
 
 
