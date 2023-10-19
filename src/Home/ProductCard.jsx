@@ -4,6 +4,11 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const ProductCard = () => {
     const products = useLoaderData()
+
+
+    if (!products || products.length === 0) {
+        return <div className="text-center text-2xl mt-20 font-extrabold text-violet-800">No data available for this brand.</div>;}
+
     return (
         <div>
 

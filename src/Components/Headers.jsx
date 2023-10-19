@@ -17,13 +17,13 @@ const Headers = () => {
     const navlinks =
         <>
             {/* Home, Add Product, My Cart, and Login. */}
-            <li className="mr-4  font-medium"><NavLink to="/">Home</NavLink></li>
-            <li className="mr-4  font-medium"><NavLink to="/addProduct">Add Product</NavLink></li>
-            <li className="mr-4  font-medium"><NavLink to="/myCart">My Cart</NavLink></li>
-            <li className="mr-4  font-medium"><NavLink to="/login">Login</NavLink></li>
+            <li className="mr-4 text-lg  font-medium"><NavLink to="/">Home</NavLink></li>
+            <li className="mr-4 text-lg font-medium"><NavLink to="/addProduct">Add Product</NavLink></li>
+            <li className="mr-4 text-lg font-medium"><NavLink to="/myCart">My Cart</NavLink></li>
+            <li className="mr-4 text-lg font-medium"><NavLink to="/login">Login</NavLink></li>
         </>
     return (
-        <div className="navbar  bg-pink-300">
+        <div className="navbar  bg-[#15e998]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

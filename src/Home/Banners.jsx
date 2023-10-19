@@ -14,7 +14,7 @@ const Banners = () => {
                     
                         <div className="hero-content text-center text-neutral-content" >
                             <div className="max-w-md ">
-                                <h1 className="mb-5 text-5xl font-bold text-pink-200 ">Driving Innovation into the Future</h1>
+                                <h1 className="mb-5 text-2xl md:text-5xl font-extrabold text-[#aa7608]/90 ">Driving Innovation into the Future</h1>
                                 <p className="mb-5 text-pink-100">Explore our range of electric and hybrid vehicles, and be part of the sustainable automotive revolution.</p>
 
                             </div>
