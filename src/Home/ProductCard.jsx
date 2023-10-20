@@ -77,7 +77,7 @@ const ProductCard = () => {
                 <h1 className=" mt-16 text-center font-bold text-2xl lg:text-5xl mb-6">Explore Brand Exclusive Car</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                    {products.map(product => <div key={product._id}>  <div className="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md transform scale-100 hover:scale-110 transition-transform duration-1000 ease-in-out">
+                    {products.map(product => <div key={product._id}>  <div className="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-[#F1F3F9] shadow-md transform scale-100 hover:scale-110 transition-transform duration-1000 ease-in-out">
                         <a className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl animate-zoom-bottom-top" href="#">
                             <img className="object-cover " src={product.brandImage} />
                             <span className="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">39% OFF</span>
@@ -138,7 +138,7 @@ const ProductCard = () => {
                         <a
                             href="#!"
                             type="button"
-                            className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                            className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out  hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
                             data-te-ripple-init
                             data-te-ripple-color="light">
                             <svg
