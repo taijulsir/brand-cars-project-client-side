@@ -17,6 +17,7 @@ import ProductUpdate from './Home/ProductUpdate';
 import MyCart from './Components/MyCart';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,8 +33,8 @@ const router = createBrowserRouter([
       {
         path: "/brands",
         element: <BrandDetails></BrandDetails>
-
       },
+
       {
         path: "/brands/:brandName",
         element: <ProductCard></ProductCard>,

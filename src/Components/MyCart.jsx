@@ -20,6 +20,7 @@ const MyCart = () => {
             })
     }, [email])
 
+    // buy now toast
     const handleBuyNow = () => {
         Swal.fire({
             icon: 'success',
@@ -27,6 +28,40 @@ const MyCart = () => {
             text: 'Congratulations,We will deliver your product on time.',
         });
     }
+
+    // delete cart any product 
+    const handleDelete = (id) => {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:5000/addTocart/${id}`, {
+                    method: "DELETE"
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your file has been deleted.',
+                                'success'
+                            )
+
+                            const remaining = carts.filter(cart=> cart._id !== id)
+                            setCarts(remaining)
+                        }
+                    })
+            }
+        })
+    }
+
     return (
         <div>
 
@@ -34,7 +69,7 @@ const MyCart = () => {
             <section className="flex  bg-stone-200 lg:min-h-screen font-poppins dark:bg-gray-700">
                 <div className=" flex-1 px-4 py-6 mx-auto container lg:py-4 md:px-6">
                     <div className="p-8 bg-gray-50 dark:bg-gray-800">
-                        <h2 className="mb-8 text-4xl font-bold dark:text-gray-400">Your Cart</h2>
+                        <h2 className="mb-8 text-4xl font-bold dark:text-gray-400">Show Cart Products</h2>
                         <div className="flex flex-wrap -mx-4">
                             <div className="w-full px-4 mb-8 xl:w-8/12 xl:mb-0">
                                 <div className="flex flex-wrap items-center mb-6 -mx-4 md:mb-8">
@@ -66,6 +101,7 @@ const MyCart = () => {
                                                         <div className="w-2/3 px-4">
                                                             <h2 className="mb-2 text-xl font-bold dark:text-gray-400">{cart.name}</h2>
                                                             <p className="text-gray-500 dark:text-gray-400 text-sm ">Brand: {cart.brandName}</p>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -90,8 +126,14 @@ const MyCart = () => {
                                                 </div>
                                                 <div className="w-auto px-4 text-right md:w-1/6 lg:w-2/12 ">
                                                     <p className="text-lg font-bold text-blue-500 dark:text-gray-400">{cart.price}</p>
+                                                    <div>
+                                                        <button
+                                                            onClick={() => handleDelete(cart._id)}
+                                                            className="px-3 py-2 font-medium hover:bg-red-700  bg-red-600/80">Delete</button>
+                                                    </div>
                                                 </div>
                                             </div>
+
                                         </div>)
                                     }
                                 </div>
