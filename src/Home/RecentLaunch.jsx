@@ -9,8 +9,11 @@ const RecentLaunch = () => {
 
                 {/* 1st product */}
                 <div className="wrapper bg-gray-400 antialiased text-gray-900">
+
                     <div className='image-container'>
                         <img src="https://i.postimg.cc/nrqQTYDZ/bmw-up.jpg" alt=" random imgee" className="w-full h-[350px] object-cover object-center rounded-lg shadow-md image pulse-grow " />
+
+                        {/* text */}
                         <div className="relative px-4 -mt-16 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out ">
                             <div className="bg-gradient-to-br from-sky-300 to-white p-6 rounded-lg shadow-lg">
                                 <div className="flex items-baseline">

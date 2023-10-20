@@ -4,6 +4,7 @@ import Brands from "./Brands";
 import Footer from "./Footer";
 import WhyChoose from "./WhyChoose";
 import RecentLaunch from "./RecentLaunch";
+import CustomerReviews from "./CustomerReviews";
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
          <Brands loadedBrands={loadedBrands}></Brands>
          <RecentLaunch></RecentLaunch>
          <WhyChoose></WhyChoose>
+         <CustomerReviews></CustomerReviews>
          <Footer></Footer>
         </div>
     );
