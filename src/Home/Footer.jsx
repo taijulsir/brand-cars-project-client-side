@@ -4,9 +4,6 @@
 const Footer = () => {
     return (
         <div>
-
-       
-
             <section className="flex flex-col lg:justify-end font-poppins ">
                 <div className="w-full bg-sky-900 pt-11 dark:bg-gray-900 ">
                     <div className="justify-center flex-1 container px-4 py-4 mx-auto lg:py-0">
@@ -16,7 +13,7 @@ const Footer = () => {
                             </h2>
                             <div className="flex flex-wrap">
                                 <div className="w-full py-1 mb-2 lg:flex-1 lg:py-0 lg:mr-3 lg:mb-0">
-                                    <input type="email " className="inline-block w-full h-12 px-3 text-gray-700 placeholder-gray-500 border rounded-md dark:placeholder-gray-400 dark:text-gray-400 dark:border-gray-700 dark:bg-gray-700" placeholder="Your email"/>
+                                    <input type="email " className="inline-block w-full h-12 px-3 text-gray-700 placeholder-gray-500 border rounded-md dark:placeholder-gray-400 dark:text-gray-400 dark:border-gray-700 dark:bg-gray-700" placeholder="Your email" />
                                 </div>
                                 <div className="w-full py-1 lg:w-auto lg:py-0">
                                     <a href="" className="inline-block w-full px-5 py-4 font-medium leading-4 text-center bg-teal-200 rounded-md dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 hover:bg-teal-300">Subscribe</a>
@@ -28,7 +25,7 @@ const Footer = () => {
                                 <a href="" className="inline-block mb-4 text-xl font-bold text-gray-200 dark:text-gray-400">About
                                     Company</a>
                                 <p className="text-base font-normal leading-6 text-gray-300 lg:w-64 dark:text-gray-400">
-                                Our mission is simple: to help you find the perfect car that fits your lifestyle and needs. We understand that purchasing a vehicle is a significant decision.</p>
+                                    Our mission is simple: to help you find the perfect car that fits your lifestyle and needs. We understand that purchasing a vehicle is a significant decision.</p>
                                 <div className="flex justify-start mt-4 ">
                                     <a href="" type="button" className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-300 rounded-full dark:border-gray-400 dark:hover:bg-gray-800 hover:border-teal-700 hover:bg-teal-700 w-9 h-9">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-4 h-full mx-auto text-gray-300 dark:text-gray-400 bi bi-facebook" viewBox="0 0 16 16">
@@ -131,7 +128,8 @@ const Footer = () => {
                     <div className="py-5 text-center text-gray-200 bg-sky-800 dark:bg-gray-800 dark:text-gray-400">
                         <span>© Copyright 2022 . All Rights Reserved</span>
                     </div>
-                </div></section>
+                </div>
+            </section>
         </div>
     );
 };
