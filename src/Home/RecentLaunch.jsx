@@ -12,7 +12,7 @@ const RecentLaunch = () => {
                     <div className='image-container'>
                         <img src="https://i.postimg.cc/nrqQTYDZ/bmw-up.jpg" alt=" random imgee" className="w-full h-[350px] object-cover object-center rounded-lg shadow-md image pulse-grow " />
                         <div className="relative px-4 -mt-16 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out ">
-                            <div className="bg-gradient-to-r from-green-300 to-blue-300  p-6 rounded-lg shadow-lg">
+                            <div className="bg-gradient-to-br from-sky-300 to-white p-6 rounded-lg shadow-lg">
                                 <div className="flex items-baseline">
                                     <span className="bg-pink-400  text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
                                         BMW
@@ -41,7 +41,7 @@ const RecentLaunch = () => {
                         <img src=" https://i.postimg.cc/JnwcRnmT/toyota.jpg" alt=" random imgee" className="w-full h-[350px] object-cover object-center rounded-lg shadow-md image pulse-grow" />
 
                         <div className="relative px-4 -mt-16 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out ">
-                            <div className="bg-gradient-to-r from-green-300 to-blue-300 p-6 rounded-lg shadow-lg">
+                            <div className="bg-gradient-to-br from-sky-300 to-white p-6 rounded-lg shadow-lg">
                                 <div className="flex items-baseline">
                                     <span className="bg-pink-400  text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
                                         Ford
@@ -73,7 +73,7 @@ const RecentLaunch = () => {
                         <img src=" https://i.postimg.cc/pVj03wQV/1-Tesla-Model-3.jpg" alt=" random imgee" className="w-full h-[350px]  object-cover object-center rounded-lg shadow-md image pulse-grow" />
 
                         <div className="relative px-4 -mt-16 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out ">
-                            <div className="bg-gradient-to-r from-green-300 to-blue-300 p-6 rounded-lg shadow-lg">
+                            <div className="bg-gradient-to-br from-sky-300 to-white p-6 rounded-lg shadow-lg">
                                 <div className="flex items-baseline">
                                     <span className="bg-pink-400  text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
                                         Honda
@@ -105,7 +105,7 @@ const RecentLaunch = () => {
                         <img src=" https://i.postimg.cc/jSpJ7F92/mercedes-benz.webp" alt=" random imgee" className="w-full h-[350px]  object-cover object-center rounded-lg shadow-md image pulse-grow" />
 
                         <div className="relative px-4 -mt-16 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out  ">
-                            <div className="bg-gradient-to-r from-green-300 to-blue-300 p-6 rounded-lg shadow-lg">
+                            <div className="bg-gradient-to-br from-sky-300 to-white p-6 rounded-lg shadow-lg">
                                 <div className="flex items-baseline">
                                     <span className="bg-pink-400  text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
                                         Tesla

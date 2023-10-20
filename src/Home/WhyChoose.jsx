@@ -1,6 +1,6 @@
 import Rating from "react-rating";
 
-import { HiOutlineShieldCheck, HiOutlineThumbUp, HiCreditCard, HiCurrencyDollar, HiHeart } from "react-icons/hi";
+import { HiOutlineShieldCheck,HiOutlineThumbUp,HiCreditCard,HiCurrencyDollar,HiHeart } from "react-icons/hi";
 import { FaQuestion } from "react-icons/fa";
 
 
@@ -21,7 +21,7 @@ const WhyChoose = () => {
                         <div className="flex gap-2">
                             <img className=" h-6  " src="https://i.postimg.cc/902K5Gcm/155860-logo-official-google-free-download-png-hq.png" alt="" />
                             <Rating
-                                initialRating="4.5"
+                            initialRating="4.5"
                                 className=" text-amber-500"
                                 emptySymbol="fa fa-star-o"
                                 fullSymbol="fa fa-star "
@@ -34,7 +34,7 @@ const WhyChoose = () => {
                         <div className="flex gap-2">
                             <img className=" h-6  " src="https://i.postimg.cc/Gpxb5J0Q/Trustpilot-Logo-2022-svg.png" alt="" />
                             <Rating
-                                initialRating="4.9"
+                            initialRating="4.9"
                                 className=" text-green-600 "
                                 emptySymbol="fa fa-star-o"
                                 fullSymbol="fa fa-star "
