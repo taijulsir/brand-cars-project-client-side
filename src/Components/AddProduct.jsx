@@ -40,8 +40,8 @@ const AddProduct = () => {
         <div className=" container mx-auto" >
             <div>
                 <div>
-                    <h1 className="text-4xl font-bold text-center pt-12  text-lime-700">Add Automotive products</h1>
-                    <p className="text-sm w-1/2 mx-auto text-center pt-2 ">Complete the form below to add your automotive product Provide essential details <br /> like the product name, brand, type, price, and rating. Click Add Product to submit your listing.</p>
+                    <h1 className="text-4xl font-bold text-center pt-12  text-lime-700">Add products</h1>
+                    <p className="text-sm w-1/2 mx-auto text-center pt-2 ">Complete the form below to add your automotive product </p>
 
                     {/* add product form */}
                     <form onSubmit={handleAddProduct} className="lg:px-0 px-3">

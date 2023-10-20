@@ -118,7 +118,9 @@ const MyCart = () => {
                                 </div>
                                 <div className="flex items-center justify-between pb-4 mb-4 ">
                                     <span className="text-gray-700 dark:text-gray-400">Order Total</span>
-                                    <span className="text-xl font-bold text-gray-700 dark:text-gray-400">$1160000</span>
+                                    <span className="text-xl font-bold text-gray-700 dark:text-gray-400">
+                                        
+                                        {carts.length === 0 ? '$0.00' : '$116000'}</span>
                                 </div>
                                 <h2 className="text-lg text-gray-500 dark:text-gray-400">We offer:</h2>
                                 <div className="flex items-center mb-4 ">
