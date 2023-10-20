@@ -1,17 +1,15 @@
 import Rating from "react-rating";
 import { useLoaderData } from "react-router-dom";
 import AuthHook from "../CustomHook/AuthHook";
+import Swal from "sweetalert2";
 
 
 const ProductDetails = () => {
-
-
-
     const { user } = AuthHook()
     const product = useLoaderData()
-    const { name, brandImage, price, rating, type } = product;
+    const { name, brandImage, price, rating, type,brandName } = product;
     const email = user.email;
-    const card = { name, brandImage, price, rating, type,email }
+    const card = { name, brandImage, price, rating,brandName, type,email }
 
     const handleAddToCart = () => {
         fetch("http://localhost:5000/addTocart", {
@@ -24,7 +22,11 @@ const ProductDetails = () => {
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
-                alert("post add done ");
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Your product add into cart successfully.',
+                  });
             });
 
 
