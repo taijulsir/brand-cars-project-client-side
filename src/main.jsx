@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/brandNames')
+        loader: () => fetch('https://new-brand-cars.vercel.app/brandNames')
       },
       {
         path: "/brands",
@@ -38,17 +38,17 @@ const router = createBrowserRouter([
       {
         path: "/brands/:brandName",
         element: <ProductCard></ProductCard>,
-        loader: ({ params }) => fetch(`http://localhost:5000/brandNames/${params.brandName}`)
+        loader: ({ params }) => fetch(`https://new-brand-cars.vercel.app/brandNames/${params.brandName}`)
       },
       {
         path: "/details/:id",
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute> ,
-        loader: ({ params }) => fetch(`http://localhost:5000/cars/${params.id}`)
+        loader: ({ params }) => fetch(`https://new-brand-cars.vercel.app/cars/${params.id}`)
       },
       {
         path: "/updateProduct/:id",
         element: <PrivateRoute><ProductUpdate></ProductUpdate></PrivateRoute> ,
-        loader: ({ params }) => fetch(`http://localhost:5000/cars/${params.id}`)
+        loader: ({ params }) => fetch(`https://new-brand-cars.vercel.app/cars/${params.id}`)
       }
       ,
       {

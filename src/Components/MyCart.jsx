@@ -13,7 +13,7 @@ const MyCart = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/addTocart/${email}`)
+        fetch(`https://new-brand-cars.vercel.app/addTocart/${email}`)
             .then(res => res.json())
             .then(data => {
                 setCarts(data)
@@ -41,7 +41,7 @@ const MyCart = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/addTocart/${id}`, {
+                fetch(`https://new-brand-cars.vercel.app/addTocart/${id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())
@@ -152,7 +152,7 @@ const MyCart = () => {
                                     </div>
                                     <div className="flex items-center justify-between pb-4 mb-4 border-b border-gray-300 dark:border-gray-700 ">
                                         <span className="text-gray-700 dark:text-gray-400">Subtotal</span>
-                                        <span className="text-xl font-bold text-gray-700 dark:text-gray-400 ">$99</span>
+                                        <span className="text-xl font-bold text-gray-700 dark:text-gray-400 ">$116000</span>
                                     </div>
                                     <div className="flex items-center justify-between pb-4 mb-4 ">
                                         <span className="text-gray-700 dark:text-gray-400 ">Shipping</span>

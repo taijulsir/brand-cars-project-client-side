@@ -21,7 +21,7 @@ const ProductUpdate = () => {
         console.log(updateProduct)
 
 
-        fetch(`http://localhost:5000/brandNames/${_id}`, {
+        fetch(`https://new-brand-cars.vercel.app/brandNames/${_id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'
