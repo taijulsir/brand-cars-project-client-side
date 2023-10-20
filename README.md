@@ -1,8 +1,8 @@
-# React + Vite
+# Project Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navigation Bar:
+- There have 4 routes,Given below the route description
+  1) Home: Display brand images and names.
+  2) Add Product: Allow users to add new products.
+  3) My Cart: Show added products.
+  4) Login: Enable user authentication via Google, GitHub, or email. Toggle between login and registration forms.
