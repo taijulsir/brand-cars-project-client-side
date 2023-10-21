@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC_NWmraSqOwsvwNWWy_iFMsPSE_Ow1J4A",
-  authDomain: "brand-cars-assignment-auth.firebaseapp.com",
-  projectId: "brand-cars-assignment-auth",
-  storageBucket: "brand-cars-assignment-auth.appspot.com",
-  messagingSenderId: "611741042187",
-  appId: "1:611741042187:web:187ae2d8a0670107efa90e"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase
