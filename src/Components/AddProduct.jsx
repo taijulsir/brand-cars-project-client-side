@@ -34,8 +34,6 @@ const AddProduct = () => {
             })
 
     }
-
-
     return (
         <div>
 
