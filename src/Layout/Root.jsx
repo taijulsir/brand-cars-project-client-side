@@ -4,7 +4,7 @@ import Headers from "../Components/Headers";
 
 const Root = () => {
     return (
-        <div>
+        <div className=" font-montserrat">
             <Headers></Headers>
             <Outlet></Outlet>
         </div>
