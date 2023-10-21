@@ -41,3 +41,6 @@ Provide a sign-out option.
 
 - User Registration:
 1) Allow users to register for an account.
+
+- Toggle between Dark and Light Mode
+1) Users can toggole betweeen dark and light in home page.

@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import WhyChoose from "./WhyChoose";
 import RecentLaunch from "./RecentLaunch";
 import CustomerReviews from "./CustomerReviews";
+import Partners from "./Partners";
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
          <RecentLaunch></RecentLaunch>
          <WhyChoose></WhyChoose>
          <CustomerReviews></CustomerReviews>
+         <Partners></Partners>
          <Footer></Footer>
         </div>
     );
